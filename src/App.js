@@ -48,9 +48,16 @@ class App extends React.Component {
       current.column = COLUMNS - 1;
     } else if (current.column < 0) {
       current.column = 0;
+    } 
+
+        console.log(mines)
+    // TODO: Did Corgi stepped in a Reactive material?
+
+    if (mines[current.row] [current.column] === 1 ) {
+      mines[current.row] [current.column] = 0 
+      console.log(mines.length)
     }
 
-    // TODO: Did Corgi stepped in a Reactive material?
 
     this.setState({ current, mines });
     e.preventDefault();

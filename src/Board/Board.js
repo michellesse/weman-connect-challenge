@@ -13,8 +13,7 @@ function Tile({ current, coordinates, mines }) {
   if (mines[coordinates.row][coordinates.column] === 1) {
     return <Reactive></Reactive>;
   }
-
-  return "";
+    return "";
 }
 
 function Board({ current, mines }) {
